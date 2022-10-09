@@ -1,0 +1,170 @@
+.heading {
+  text-align: center;
+}
+
+.heading span {
+
+  padding-top: 1rem;
+  font-family: 'Satisfy', cursive;
+  font-size: 2rem;
+  color: #27ae60;
+}
+
+.heading h3 {
+  color: #130f40;
+
+}
+
+.category {
+
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 5rem;
+}
+
+.category .box {
+  padding: 2rem;
+  text-align: center;
+  border-radius: .5rem;
+  background: #f7f7f7;
+}
+
+.category .box:hover {
+  background: #27ae60;
+}
+
+.category .box:hover h3 {
+  color: #fff;
+}
+
+.category .box img {
+  height: 7rem;
+}
+
+.category .box h3 {
+  font-size: 1.8rem;
+  color: #130f40;
+}
+
+
+img {
+  height: 250px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+div [class^="col-"] {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 35rem;
+}
+
+.veggieTitle {
+  color: #27ae60;
+  font-weight: 550;
+}
+
+.columnVeggie {
+  display: flex;
+  height: 15rem;
+  margin-bottom: 5rem;
+
+}
+
+.card-block {
+  border: none;
+  background: transparent;
+}
+
+
+
+
+
+
+.card {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+  padding-left: 1rem;
+  font-weight: 400;
+
+}
+
+.card-title i {
+  font-size: 15px;
+  transition: 1s;
+  cursor: pointer;
+  color: #ffa710
+}
+
+.card-title i:hover {
+  transform: scale(1.25) rotate(100deg);
+  color: #27ae60;
+
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-text {
+  height: 80px;
+}
+
+.linkStyle {
+  text-decoration: none;
+}
+
+.linkStyle:hover {
+  color: #27ae60;
+}
+
+.card::before,
+.card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+
+.card::before {
+  transform-origin: left top;
+}
+
+.card::after {
+  transform-origin: right bottom;
+}
+
+.card:hover::before,
+.card:hover::after,
+.card:focus::before,
+.card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+.columnVeggie h3 {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 1rem;
+  color: #130f40;
+}
+
+.columnVeggie h3:hover {
+
+  color: #27ae60;
+}
